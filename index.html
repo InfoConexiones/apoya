@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apoya a InfoConexiones</title>
+<meta name="description" content="Apoya el desarrollo de las aplicaciones de InfoConexiones con una donación voluntaria (Ko-fi, USDT, Binance, Pago Móvil, PayPal).">
+<style>
+  :root{
+    --teal:#00695C; --teal-soft:#e0f2f0; --ink:#1b1b1b; --muted:#5f6b6a;
+    --bg:#f4f7f7; --card:#ffffff; --line:#e3e9e8; --warn:#b25e00; --warn-bg:#fff4e5;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       line-height:1.55;-webkit-text-size-adjust:100%}
+  header{background:var(--teal);color:#fff;padding:28px 18px 22px;text-align:center}
+  header h1{margin:0 0 6px;font-size:1.55rem;letter-spacing:.2px}
+  header p{margin:0;opacity:.92;font-size:.98rem}
+  .lang{position:absolute;top:10px;right:12px}
+  .lang button{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.5);
+       border-radius:8px;padding:5px 11px;font-size:.85rem;font-weight:600;cursor:pointer;margin-left:6px}
+  .lang button[aria-pressed="true"]{background:#fff;color:var(--teal)}
+  main{max-width:720px;margin:0 auto;padding:18px 14px 40px}
+  .intro{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:16px}
+  .intro p{margin:0;color:var(--muted);font-size:.97rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:14px;
+        box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  .card h2{margin:0 0 4px;font-size:1.08rem;color:var(--teal)}
+  .card .hint{margin:0 0 12px;color:var(--muted);font-size:.9rem}
+  .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .data{flex:1 1 240px;min-width:0}
+  .label{display:block;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.6px;margin-bottom:2px}
+  .value{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.95rem;
+         word-break:break-all;background:var(--teal-soft);border-radius:8px;padding:7px 10px;display:block}
+  button.copy{flex:0 0 auto;background:var(--teal);color:#fff;border:0;border-radius:9px;padding:9px 15px;
+       font-size:.92rem;font-weight:700;cursor:pointer}
+  button.copy:active{transform:translateY(1px)}
+  button.copy.done{background:#2e7d32}
+  a.open{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;border-radius:9px;
+       padding:11px 20px;font-weight:700;font-size:.98rem}
+  a.open.alt{background:#1b1b1b}
+  .warn{background:var(--warn-bg);color:var(--warn);border:1px solid #f0d9b5;border-radius:9px;
+        padding:8px 11px;font-size:.88rem;font-weight:600;margin:0 0 12px}
+  .qr{display:block;width:min(280px,86%);margin:2px auto 12px;border-radius:12px;border:1px solid var(--line)}
+  .grid{display:grid;grid-template-columns:1fr;gap:8px}
+  .note{margin:10px 0 0;color:var(--muted);font-size:.85rem}
+  .policy{background:#fff;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin-top:18px;
+          color:var(--muted);font-size:.87rem}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;padding:8px 14px 30px}
+  footer a{color:var(--teal)}
+  [data-lang]{display:none}
+  [data-lang].on{display:block}
+  @media(min-width:620px){ .grid{grid-template-columns:1fr 1fr} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="lang">
+    <button id="btn-es" aria-pressed="true" onclick="setLang('es')">ES</button>
+  </div>
+  <h1 id="title-es">Apoya a InfoConexiones</h1>
+  <h1 id="title-en" style="display:none">Support InfoConexiones</h1>
+  <p id="sub-es">Gracias por considerar apoyar el desarrollo</p>
+  <p id="sub-en" style="display:none">Thank you for considering supporting development</p>
+</header>
+
+<main>
+
+  <!-- ══════════ ESPAÑOL ══════════ -->
+  <div data-lang="es" class="on">
+    <div class="intro">
+      <p>Si mis aplicaciones te resultan útiles, puedes apoyar el desarrollo con una <strong>donación voluntaria</strong>. Cada aporte sostiene el mantenimiento y las próximas apps — sin anuncios ni suscripciones. ¡Gracias!</p>
+    </div>
+
+    <div class="card">
+      <h2>1 · Ko-fi (internacional)</h2>
+      <p class="hint">La forma más simple: paga con PayPal desde la página de Ko-fi.</p>
+      <a class="open" href="https://ko-fi.com/infoconexiones" target="_blank" rel="noopener">Abrir Ko-fi ☕</a>
+    </div>
+
+    <div class="card">
+      <h2>2 · USDT (cripto)</h2>
+      <p class="warn">⚠ Envía SOLO USDT por la red TRON (TRC20). Otra red puede hacer perder los fondos.</p>
+      <img class="qr" src="assets/qr-usdt-trc20.png" alt="QR para depositar USDT por TRC20">
+      <div class="row">
+        <div class="data">
+          <span class="label">Dirección TRC20</span>
+          <span class="value" id="usdt-addr">TXZZm26H9hhYiLr9vuTPDwanoTuPyNcK7A</span>
+        </div>
+        <button class="copy" onclick="copyText('TXZZm26H9hhYiLr9vuTPDwanoTuPyNcK7A', this)">Copiar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>3 · Binance (entre usuarios)</h2>
+      <p class="hint">Si tienes Binance, transfiere a mi UID (transferencia interna, sin comisión).</p>
+      <div class="row">
+        <div class="data">
+          <span class="label">UID de Binance</span>
+          <span class="value">253287113</span>
+        </div>
+        <button class="copy" onclick="copyText('253287113', this)">Copiar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>4 · Pago Móvil (Venezuela)</h2>
+      <p class="hint">Pago Móvil desde tu banco — receptor:</p>
+      <div class="grid">
+        <div class="row">
+          <div class="data"><span class="label">Banco</span><span class="value">Banesco · 0134</span></div>
+          <button class="copy" onclick="copyText('0134', this)">Copiar</button>
+        </div>
+        <div class="row">
+          <div class="data"><span class="label">Cédula</span><span class="value">V-12601314</span></div>
+          <button class="copy" onclick="copyText('12601314', this)">Copiar</button>
+        </div>
+        <div class="row">
+          <div class="data"><span class="label">Teléfono</span><span class="value">0412-3306484</span></div>
+          <button class="copy" onclick="copyText('04123306484', this)">Copiar</button>
+        </div>
+      </div>
+      <p class="note">El titular del Pago Móvil es el desarrollador.</p>
+    </div>
+
+    <div class="card">
+      <h2>5 · PayPal (envío directo)</h2>
+      <p class="hint">Puedes enviar una donación desde tu cuenta PayPal al correo:</p>
+      <div class="row">
+        <div class="data">
+          <span class="label">Correo PayPal</span>
+          <span class="value">infoconexiones.apps@gmail.com</span>
+        </div>
+        <button class="copy" onclick="copyText('infoconexiones.apps@gmail.com', this)">Copiar</button>
+      </div>
+      <div id="paypalme-wrap" style="display:none;margin-top:12px">
+        <a class="open alt" id="paypalme-link" href="#" target="_blank" rel="noopener">Abrir PayPal.Me</a>
+      </div>
+    </div>
+
+    <div class="policy">
+      <p>La compra de <strong>TasasVE Pro</strong> se realiza <strong>dentro de la aplicación</strong> mediante Google Play. Las donaciones de esta página son un <strong>apoyo voluntario al proyecto</strong> y <strong>no desbloquean funciones</strong> de las aplicaciones.</p>
+    </div>
+  </div>
+
+  <!-- ══════════ ENGLISH ══════════ -->
+  <div data-lang="en">
+    <div class="intro">
+      <p>If my apps are useful to you, you can support development with a <strong>voluntary donation</strong>. Every contribution sustains maintenance and upcoming apps — with no ads or subscriptions. Thank you!</p>
+    </div>
+
+    <div class="card">
+      <h2>1 · Ko-fi (international)</h2>
+      <p class="hint">The simplest way: pay with PayPal from the Ko-fi page.</p>
+      <a class="open" href="https://ko-fi.com/infoconexiones" target="_blank" rel="noopener">Open Ko-fi ☕</a>
+    </div>
+
+    <div class="card">
+      <h2>2 · USDT (crypto)</h2>
+      <p class="warn">⚠ Send USDT ONLY on the TRON (TRC20) network. Any other network may result in lost funds.</p>
+      <img class="qr" src="assets/qr-usdt-trc20.png" alt="QR to deposit USDT via TRC20">
+      <div class="row">
+        <div class="data">
+          <span class="label">TRC20 address</span>
+          <span class="value">TXZZm26H9hhYiLr9vuTPDwanoTuPyNcK7A</span>
+        </div>
+        <button class="copy" onclick="copyText('TXZZm26H9hhYiLr9vuTPDwanoTuPyNcK7A', this)">Copy</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>3 · Binance (between users)</h2>
+      <p class="hint">If you use Binance, transfer to my UID (internal transfer, no fee).</p>
+      <div class="row">
+        <div class="data">
+          <span class="label">Binance UID</span>
+          <span class="value">253287113</span>
+        </div>
+        <button class="copy" onclick="copyText('253287113', this)">Copy</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>4 · Pago Móvil (Venezuela)</h2>
+      <p class="hint">Bank transfer from your Venezuelan banking app — recipient:</p>
+      <div class="grid">
+        <div class="row">
+          <div class="data"><span class="label">Bank</span><span class="value">Banesco · 0134</span></div>
+          <button class="copy" onclick="copyText('0134', this)">Copy</button>
+        </div>
+        <div class="row">
+          <div class="data"><span class="label">ID number</span><span class="value">V-12601314</span></div>
+          <button class="copy" onclick="copyText('12601314', this)">Copy</button>
+        </div>
+        <div class="row">
+          <div class="data"><span class="label">Phone</span><span class="value">0412-3306484</span></div>
+          <button class="copy" onclick="copyText('04123306484', this)">Copy</button>
+        </div>
+      </div>
+      <p class="note">The Pago Móvil account holder is the developer.</p>
+    </div>
+
+    <div class="card">
+      <h2>5 · PayPal (direct transfer)</h2>
+      <p class="hint">You can send a donation from your PayPal account to:</p>
+      <div class="row">
+        <div class="data">
+          <span class="label">PayPal email</span>
+          <span class="value">infoconexiones.apps@gmail.com</span>
+        </div>
+        <button class="copy" onclick="copyText('infoconexiones.apps@gmail.com', this)">Copy</button>
+      </div>
+      <div id="paypalme-wrap-en" style="display:none;margin-top:12px">
+        <a class="open alt" id="paypalme-link-en" href="#" target="_blank" rel="noopener">Open PayPal.Me</a>
+      </div>
+    </div>
+
+    <div class="policy">
+      <p>The purchase of <strong>TasasVE Pro</strong> is made <strong>inside the app</strong> through Google Play. Donations on this page are a <strong>voluntary support for the project</strong> and <strong>do not unlock app features</strong>.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>InfoConexiones · <a href="mailto:contacto.infoconexiones@gmail.com">contacto.infoconexiones@gmail.com</a></p>
+</footer>
+
+<script>
+  /* ── Configuración PayPal.Me (desactivado hasta decidir la cuenta receptora) ── */
+  const PAYPAL_ME_ENABLED = false;
+  const PAYPAL_ME_URL = ""; // ej: "https://paypal.me/usuario"
+
+  /* ── Personalización por app: /apoya/?app=tasasve ── */
+  const APP_NAMES = { tasasve: "TasasVE", memocalc: "MemoCalc" };
+  const appKey = (new URLSearchParams(location.search).get("app") || "").toLowerCase();
+  const appName = APP_NAMES[appKey] || "InfoConexiones";
+  document.getElementById("title-es").textContent = "Apoya a " + appName;
+  document.getElementById("title-en").textContent = "Support " + appName;
+  document.title = "Apoya a " + appName;
+
+  /* ── Idioma ── */
+  function setLang(lang) {
+    document.querySelectorAll("[data-lang]").forEach(function (el) {
+      el.classList.toggle("on", el.getAttribute("data-lang") === lang);
+    });
+    document.getElementById("btn-es").setAttribute("aria-pressed", lang === "es");
+    document.getElementById("btn-es").textContent = lang === "es" ? "ES" : "EN";
+    document.documentElement.lang = lang;
+  }
+  document.getElementById("btn-es").textContent = "EN";
+  document.getElementById("btn-es").onclick = function () {
+    setLang(document.documentElement.lang === "es" ? "en" : "es");
+  };
+
+  /* ── PayPal.Me (si se activa en la configuración) ── */
+  if (PAYPAL_ME_ENABLED && PAYPAL_ME_URL) {
+    ["paypalme-wrap", "paypalme-wrap-en"].forEach(function (id) {
+      const wrap = document.getElementById(id);
+      if (wrap) wrap.style.display = "block";
+    });
+    ["paypalme-link", "paypalme-link-en"].forEach(function (id) {
+      const a = document.getElementById(id);
+      if (a) a.href = PAYPAL_ME_URL;
+    });
+  }
+
+  /* ── Copiar al portapapeles con confirmación ── */
+  function copyText(text, btn) {
+    const done = function () {
+      const original = btn.textContent;
+      btn.textContent = "✓";
+      btn.classList.add("done");
+      setTimeout(function () {
+        btn.textContent = original;
+        btn.classList.remove("done");
+      }, 1400);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(function () { fallback(text, done); });
+    } else {
+      fallback(text, done);
+    }
+  }
+  function fallback(text, done) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); done(); } catch (e) { alert(text); }
+    document.body.removeChild(ta);
+  }
+</script>
+</body>
+</html>
